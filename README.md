@@ -1,65 +1,50 @@
 # MMA Recorder
 
-Turn your **Mega Man Arena** replays (`.rpy`) into videos. Drop a replay in, click **Render**, and get an MP4 with
-the match's sound effects and music, without opening the game, OBS, or anything else. Then trim, slice and speed up
-clips in the built-in editor and export MP4, MOV or GIF.
+Turn **Mega Man Arena** replays (`.rpy`) into (`.mp4`) or (`.gif`)! Generate a thumbnail and then edit the footage with the built in editor!
 
 ## Download
 
 **[Download the latest version](../../releases/latest)** and run `MMA-Recorder-Setup-<version>.exe`.
 
 - Windows 10 or 11, 64-bit.
-- Installs just for you (no admin needed), with a Start menu and desktop shortcut.
-- Windows may say "Windows protected your PC / unknown publisher" the first time, because the installer isn't
-  code-signed. Click **More info**, then **Run anyway**.
-
+  
 ## What you need
 
-- **A Mega Man Arena build with render mode.** Render mode is coming to the game in an upcoming alpha. Older builds
-  can't render.
-- **Replays from that same version.** Replays only play back on the exact game version they were recorded on, so
-  record new matches with the build you point MMA Recorder at.
+- **A Mega Man Arena** version that corresponds to your replay file.
 
 ## How to use it
 
-1. Open MMA Recorder. **Settings** opens: drop your `MegaManArena.exe` (a build with render mode) on the box, or
-   click **Browse**. The badge at the top turns green.
-2. The **Replays** screen lists your replays from `%LOCALAPPDATA%\MegaManArena\MMA Replays`. You can also drop
-   replays onto the window, or click **Browse**.
-3. Click **Render** for the whole match, or **Last 15s** for a quick clip of the ending.
-4. Videos are saved to `Videos\MMA Recorder`. Click **Edit** on a finished render, or open **My videos**, to edit it.
+1. Drop your (`.rpy`) replay file into the application and press render!
+2. You can mess with settings such as whether to generate thumbnails, how the thumbnails look, and what part of the video to render.
+3. You can select **Render Speed**, video format, resolution, and more.
 
-**Render speed** (in Settings):
+**Render speed**:
 
 | Option | Speed | Sound |
 |---|---|---|
-| Normal + Sound | real time (a 2 minute match takes about 2 minutes) | yes, exact |
-| Quick + Sound (default) | as fast as your PC can go (about twice as fast) | yes |
-| Fast + No Sound | as fast as your PC can go | no |
+| Normal + Sound | real time (1 to 1 frame by frame) | yes |
+| Quick + Sound (default) | speeds up gameplay and audio, then processes back to normal | yes |
+| Fast + No Sound | speeds up gameplay, up to 8x speed | no |
 
-The game runs hidden and muted in the background while it renders; you can keep using your PC. Windows tells you
-when your renders are done (you can turn that off in Settings).
+The application doesn't require Mega Man Arena to be open. Once you've linked your MegaManArena.exe file, it uses MMA as an engine to process the replay.
 
 ## Finding replays
 
-The **Replays** screen lists every replay in your MMA Replays folder (or any folder you pick with **Change**).
-Search by player, character, stage or file name; filter by up to 4 characters, up to 4 players, stage or mode; sort
-by date or length; and star your favorites. **Only Show Replays for this Version** hides replays your game can't
-render (their version tag is red). Click **Render**, **Last 15s** or **Add to queue** right from the list.
+The **Replays** list can be linked to your actual MMA replays file.
+You can filter by player names that have shown up in replays (via online play), by stage, mode, and even character!
 
 **Batch renders:** click replays' pictures to select them, then **Render selected**. Tick **Auto-Edit Renders** to
-have each one edited with your batch render profile (input display, format, thumbnail...) and exported automatically.
+have each one edited with your batch render profile and exported automatically.
+1. Using the built-in editor, you can create a profile to save the way you like your videos to be edited, and auto edit batches of renders all at once.
 
 ## Thumbnails
 
-The **Thumbnails** screen sets the look of a VS-style thumbnail for 1v1, multiplayer and Boss Mode matches. Every
-video gets its own, with its players' taunts in their colors. In Settings (Thumbnail tab) choose whether to save it
-as a `.png` next to the video and/or bake it into the start of the video.
+The thumbnails tab lets you create certain thumbnail defaults that automatically generate when you render replays.
+- You can even set the thumbnail to be baked into the first few frames of the video so it shows up in video previews, such as Discord!
 
 ## Profiles
 
-In the editor, **Profiles** saves your editor settings (input display, sound levels) and render options. Pick
-**My editing profile** to open new videos with it, and a **Batch render profile** for Auto-Edit Renders.
+In the editor, use **profiles** to save your presets.
 
 ## The editor
 
@@ -73,10 +58,7 @@ In the editor, **Profiles** saves your editor settings (input display, sound lev
 - Export **MP4**, **MOV** or **GIF** (GIFs work best under 20 seconds). When it's done, copy the video and paste it
   into Discord with `Ctrl+V`, or drag it out of the pop-up.
 
-**Input display:** show each player's button presses in the video, fighting-game style: the direction, the buttons
-and how many frames they were held, newest on top. Turn it on per player under **Input display** in the editor.
-Pick a corner, or **Custom** to drag it anywhere on the picture. **Properties** sets its size (1x to 3x), the
-background opacity and every button's color.
+**Input display:** utilizes each player's inputs to display them alongside the frame they were pressed on. Below is the breakdown of what each input means.
 
 - J = Jump
 - S = Shoot
@@ -91,9 +73,9 @@ arrow keys or `,` / `.` step a frame, `Ctrl+Left` / `Ctrl+Right` jump to a clip'
 
 ## Opening replays by double-clicking
 
-The installer lets `.rpy` files open in MMA Recorder. If they still open in another program, right-click a replay,
-choose **Open with > Choose another app > MMA Recorder**, and tick **Always**.
+The installer lets `.rpy` files open straight to MMA Recorder. 
+- If this doesn't work, right click and **Open with > Choose another app > MMA Recorder**, and press **Always**.
 
----
+------------------------------------
 
-MMA Recorder is a fan-made tool for Mega Man Arena. Mega Man and all related content belong to Capcom.
+All related content belongs to Capcom, this is a fan project.
