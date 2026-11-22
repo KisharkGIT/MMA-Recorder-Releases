@@ -55,7 +55,7 @@ have each one edited with your batch render profile (input display, format, thum
 ## Thumbnails
 
 The **Thumbnails** screen sets the look of a VS-style thumbnail for 1v1, multiplayer and Boss Mode matches. Every
-video gets its own, with its players' taunts in their colors. In Settings (Thumbnail tab) choose whether to save it
+video gets its own, with its players' taunts in their colors. Boss thumbnails can also show the run time, read from the game's clock. In Settings (Thumbnail tab) choose whether to save it
 as a `.png` next to the video and/or bake it into the start of the video.
 
 ## Profiles
