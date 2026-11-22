@@ -2,7 +2,7 @@
 
 Turn your **Mega Man Arena** replays (`.rpy`) into videos. Drop a replay in, click **Render**, and get an MP4 with
 the match's sound effects and music, without opening the game, OBS, or anything else. Then trim, slice and speed up
-clips in the built-in editor and export MP4, MOV or GIF.
+clips in the built-in editor, add sound effects, and export MP4, MOV or GIF.
 
 ## Download
 
@@ -67,8 +67,12 @@ In the editor, **Profiles** saves your editor settings (input display, sound lev
 
 - **Trim** by dragging a clip's edges, **slice** with `S`, **drag** clips anywhere (empty space plays black and silent).
 - **Right-click** a clip for copy, cut, paste, duplicate, clip speed, properties and delete.
-- **Clip speed** in the Properties panel (0.1x to 8x).
-- Separate **sound effects** and **music** volume and mute.
+- **Clip speed** in the Inspector (0.1x to 8x). The Inspector on the right shows whatever clip you click.
+- **Sound effects:** the **SFX** page has built-in sounds, and you can add your own (drag `.mp3` / `.wav` / `.ogg`
+  files onto it, or **Browse**). Double-click a sound or drag it onto the **SOUNDS** track.
+- **Volume:** drag the line on any audio clip up or down, or click the clip to set its volume and each track's
+  volume and mute (sound effects, music, added sounds) in the Inspector.
+- Drag the line under a track's name to change its height; drag the line above the timeline to resize it.
 - Click **empty space** on the timeline and press `Del` to close the gap.
 - Right-click a clip for **Auto-trim** (cuts the READY intro and the dead time after the match).
 - Add the **thumbnail** at the start or anywhere on the timeline.
@@ -76,7 +80,7 @@ In the editor, **Profiles** saves your editor settings (input display, sound lev
   into Discord with `Ctrl+V`, or drag it out of the pop-up.
 
 **Input display:** show each player's button presses in the video, fighting-game style: the direction, the buttons
-and how many frames they were held, newest on top. Turn it on per player under **Input display** in the editor.
+and how many frames they were held, newest on top. Turn it on per player on the editor's **EFFECTS** page.
 Pick a corner, or **Custom** to drag it anywhere on the picture. **Properties** sets its size (1x to 3x), the
 background opacity and every button's color.
 
